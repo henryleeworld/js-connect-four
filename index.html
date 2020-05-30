@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="og:title" content="四子棋" />
+    <meta property="og:description" content="遊戲雙方輪流每次把一只棋子放進棋盤任何未全滿的一行中，棋子會占據一行中最底未被占據的位置。任何一方先以四只棋子在橫，豎或斜方向聯成一條直線，便可獲勝，遊戲亦結束。"/>
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="css/connect-four.css">
+    <title>四子棋</title>
+</head>
+<body>
+<div id="game">
+    下一個玩家：<i id="color"></i>
+    <div id="messages">
+        <span id="p-1">紅色</span>
+        <span id="p-2">黃色</span>
+        <span id="new-game">你確定要開始新遊戲嗎？</span>
+        <span id="won">%s玩家贏了。你想玩新遊戲嗎？</span>
+    </div>
+    <table>
+        <tr>
+            <td id="color-11"></td>
+            <td id="color-12"></td>
+            <td id="color-13"></td>
+            <td id="color-14"></td>
+            <td id="color-15"></td>
+            <td id="color-16"></td>
+            <td id="color-17"></td>
+        </tr>
+        <tr>
+            <td id="color-21"></td>
+            <td id="color-22"></td>
+            <td id="color-23"></td>
+            <td id="color-24"></td>
+            <td id="color-25"></td>
+            <td id="color-26"></td>
+            <td id="color-27"></td>
+        </tr>
+        <tr>
+            <td id="color-31"></td>
+            <td id="color-32"></td>
+            <td id="color-33"></td>
+            <td id="color-34"></td>
+            <td id="color-35"></td>
+            <td id="color-36"></td>
+            <td id="color-37"></td>
+        </tr>
+        <tr>
+            <td id="color-41"></td>
+            <td id="color-42"></td>
+            <td id="color-43"></td>
+            <td id="color-44"></td>
+            <td id="color-45"></td>
+            <td id="color-46"></td>
+            <td id="color-47"></td>
+        </tr>
+        <tr>
+            <td id="color-51"></td>
+            <td id="color-52"></td>
+            <td id="color-53"></td>
+            <td id="color-54"></td>
+            <td id="color-55"></td>
+            <td id="color-56"></td>
+            <td id="color-57"></td>
+        </tr>
+        <tr>
+            <td id="color-61"></td>
+            <td id="color-62"></td>
+            <td id="color-63"></td>
+            <td id="color-64"></td>
+            <td id="color-65"></td>
+            <td id="color-66"></td>
+            <td id="color-67"></td>
+        </tr>
+    </table>
+    <div class="left leg"></div>
+    <div class="right leg"></div>
+    <button id="restart">新遊戲</button>
+    <script  src="js/connect-four.js"></script>
+</body>
+</html>
